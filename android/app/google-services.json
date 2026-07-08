@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "669709579751",
+    "project_id": "scanme-d70c9",
+    "storage_bucket": "scanme-d70c9.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669709579751:android:7df30c686afa7fe9f5b942",
+        "android_client_info": {
+          "package_name": "com.scanme.app.scanme_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0drBV-UXdeH4vgvz8CDZSGlRGxkf2eW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
