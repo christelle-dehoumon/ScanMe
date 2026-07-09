@@ -51,6 +51,14 @@ dependencies:
   path_provider: ^2.0.15
   uuid: ^4.5.3
 
+  # Security & Encryption
+  encrypt: ^5.0.3
+  pointycastle: ^3.9.1
+
+  # Error Handling & Logging
+  logger: ^2.4.0
+  dio: ^5.7.0
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -59,12 +67,21 @@ dev_dependencies:
   # encourage good coding practices. The lint set provided by the package is
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
-  # rules and activating additional ones.
+  # rules and allowing you to override the lints set provided by this package
+  # in the `analysis_options.yaml` file located at the root of your package.
+  # See also https://dart.dev/guides/language/analysis-options
   flutter_lints: ^6.0.0
+
+  # Testing
+  mockito: ^4.4.4
+  http_mock_adapter: ^0.4.1
+
+  # Code Quality
+  very_good_analysis: ^5.1.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
+#
 # The following section is specific to Flutter packages.
 flutter:
 
@@ -86,8 +103,8 @@ flutter:
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
+  # family key with the font family name, and a fonts key with
+  # a list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
   #   - family: Schyler
@@ -102,4 +119,4 @@ flutter:
   #         weight: 700
   #
   # For details regarding fonts from package dependencies,
-  # see https://flutter.dev/to/font-from-package
+  # see https://flutter.dev/to/asset-from-package
