@@ -1,4 +1,4 @@
-# ScanMe 📱
+# ScanMe  📱
 
 A modern mobile app designed to simplify and streamline daily contact sharing, QR code management, and mobile money payments. Built with Flutter and Firebase for West African users.
 
@@ -11,14 +11,9 @@ A modern mobile app designed to simplify and streamline daily contact sharing, Q
 - 💾 Local contact storage with cloud sync
 - 🔐 Secure contact data encryption
 
-### Payment Integration
-- 💰 Generate payment QR codes
-- 🏪 Support for Orange Money, Moov Money, and Wave
-- 📋 Transaction history with receipt generation
-- 🧾 Share payment receipts
 
 ### Scanner
-- 📷 Universal QR code scanner
+- 📷 Universal QR code scanner for contact sharing
 - 🔗 WhatsApp link detection
 - 🎯 Contact, payment, and social profile parsing
 
@@ -231,7 +226,7 @@ This project is private and proprietary.
 
 For issues or questions:
 - Open an GitHub issue
-- Contact: christelle-dehoumon@example.com
+- Contact: dhmchristelle@gmail.com
 
 ## 🎯 Roadmap
 
