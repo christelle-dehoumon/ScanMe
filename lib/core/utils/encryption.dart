@@ -1,16 +1,15 @@
-import 'package:encrypt/encrypt.dart' as encrypt;
-import 'package:pointycastle/export.dart';
+import 'package:encrypt/encrypt.dart' as encrypt_pkg;
 
 /// Service for AES-256 encryption/decryption of sensitive data
 class EncryptionService {
   // Static encryption key (in production, load from secure storage)
   // WARNING: Replace with secure key management in production!
-  static final _key = encrypt.Key.fromUtf8(
+  static final _key = encrypt_pkg.Key.fromUtf8(
     'your-32-char-secret-key-here!!!',  // Must be exactly 32 chars
   );
   
-  static final _iv = encrypt.IV.fromLength(16);
-  static final _encrypter = encrypt.Encrypter(encrypt.AES(_key, mode: encrypt.AESMode.cbc));
+  static final _iv = encrypt_pkg.IV.fromLength(16);
+  static final _encrypter = encrypt_pkg.Encrypter(encrypt_pkg.AES(_key, mode: encrypt_pkg.AESMode.cbc));
 
   /// Encrypts a string using AES-256
   static String encrypt(String plaintext) {

@@ -84,10 +84,10 @@ service cloud.firestore {
 ## Compliance
 
 ### GDPR (General Data Protection Regulation)
-- ✅ Users can request and delete their data
-- ✅ Data is minimized (only necessary info collected)
-- ✅ Privacy policy available in the app
-- ✅ Consent obtained for data processing
+-  Users can request and delete their data
+-  Data is minimized (only necessary info collected)
+-  Privacy policy available in the app
+-  Consent obtained for data processing
 
 ### Privacy by Design
 - Data encryption by default

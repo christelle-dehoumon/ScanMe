@@ -18,17 +18,6 @@ class PaymentInputScreen extends ConsumerStatefulWidget {
   ConsumerState<PaymentInputScreen> createState() => _PaymentInputScreenState();
 }
 
-class _HomeScreenState extends State<PaymentInputScreen> {
-  // Temporary basic build to satisfy Flutter's requirement
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text("Paiement")),
-      body: Center(child: Text("Écran de paiement")),
-    );
-  }
-}
-
 class _PaymentInputScreenState extends ConsumerState<PaymentInputScreen> {
   final TextEditingController _amountController = TextEditingController();
   final _formKey = GlobalKey<FormState>();
@@ -88,12 +77,11 @@ class _PaymentInputScreenState extends ConsumerState<PaymentInputScreen> {
     await Clipboard.setData(ClipboardData(text: '$phone $amount'));
 
     // Attempt to open native application / dialer
-    bool launched = false;
     final uri = Uri.parse(deepLink);
     
     try {
       if (await canLaunchUrl(uri)) {
-        launched = await launchUrl(uri);
+        await launchUrl(uri);
       }
     } catch (e) {
       // Failed to launch

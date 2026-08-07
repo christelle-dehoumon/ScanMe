@@ -2,33 +2,33 @@
 
 A modern mobile app designed to simplify and streamline daily contact sharing, QR code management, and mobile money payments. Built with Flutter and Firebase for West African users.
 
-## 🌟 Features
+## Features
 
 ### Contact Management
-- 📲 Scan contact QR codes (vCard format)
-- 🔄 Social media profile linking (Instagram, TikTok, Snapchat)
-- 👥 Grant/revoke access to your contacts
-- 💾 Local contact storage with cloud sync
-- 🔐 Secure contact data encryption
+- Scan contact QR codes (vCard format)
+- Social media profile linking (Instagram, TikTok, Snapchat)
+- Grant/revoke access to your contacts
+- Local contact storage with cloud sync
+- Secure contact data encryption
 
 ### Payment Integration
-- 💰 Generate payment QR codes
-- 🏪 Support for Orange Money, Moov Money, and Wave
-- 📋 Transaction history with receipt generation
-- 🧾 Share payment receipts
+- Generate payment QR codes
+- Support for Orange Money, Moov Money, and Wave
+- Transaction history with receipt generation
+- Share payment receipts
 
 ### Scanner
-- 📷 Universal QR code scanner
-- 🔗 WhatsApp link detection
-- 🎯 Contact, payment, and social profile parsing
+- Universal QR code scanner
+- WhatsApp link detection
+- Contact, payment, and social profile parsing
 
 ### Security
-- 🔐 End-to-end encryption for sensitive data
-- 🛡️ Firebase authentication with OTP
-- 📍 Privacy controls and data deletion
-- ✅ RGPD compliant
+- End-to-end encryption for sensitive data
+- Firebase authentication with OTP
+- Privacy controls and data deletion
+- RGPD compliant
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Flutter SDK: ^3.10.7
@@ -72,7 +72,7 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 lib/
@@ -126,7 +126,7 @@ flutter format .
 flutter format --set-exit-if-changed .
 ```
 
-## 🔐 Security
+## Security
 
 ### Data Encryption
 Sensitive data (phone numbers, transaction details) is encrypted using AES encryption:
@@ -148,7 +148,7 @@ final decrypted = EncryptionService.decrypt(encrypted);
 - Transaction data is never stored in plain text
 - Local cache is encrypted using Hive encryption
 
-## 📚 Architecture
+## Architecture
 
 ScanMe follows a clean architecture pattern:
 
@@ -162,7 +162,7 @@ We use **Riverpod** for:
 - Reactive state management
 - Async data fetching
 
-## 🛠️ Development
+##  Development
 
 ### Running in Development Mode
 ```bash
@@ -177,13 +177,13 @@ _simulateScan('contact');  // Mock contact QR
 _simulateScan('orange_payment');  // Mock payment QR
 ```
 
-## 🌐 Localization
+## Localization
 
 Currently supports French. To add more languages:
 1. Add language files to `assets/l10n/`
 2. Update `pubspec.yaml` with new locales
 
-## 📱 Build for Production
+## Build for Production
 
 ### Android
 ```bash
@@ -196,7 +196,7 @@ flutter build appbundle --release
 flutter build ios --release
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Firebase Connection Issues
 - Ensure `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) are configured
@@ -210,7 +210,7 @@ flutter build ios --release
 - Clear app data: `flutter clean`
 - Reinstall: `flutter pub get`
 
-## 🤝 Contributing
+## Contributing
 
 1. Create a feature branch: `git checkout -b feature/amazing-feature`
 2. Commit changes with meaningful messages
@@ -223,17 +223,17 @@ flutter build ios --release
 - Format code: `flutter format .`
 - Pre-commit hooks will run automatically
 
-## 📄 License
+## License
 
 This project is private and proprietary.
 
-## 📞 Support
+## Support
 
 For issues or questions:
 - Open an GitHub issue
 - Contact: christelle-dehoumon@example.com
 
-## 🎯 Roadmap
+## Roadmap
 
 - [ ] Proximity-based contact sharing (Bluetooth/NFC)
 - [ ] Offline-first architecture
@@ -245,4 +245,4 @@ For issues or questions:
 
 ---
 
-**Made with ❤️ for West Africa**
+**Made for West Africa**

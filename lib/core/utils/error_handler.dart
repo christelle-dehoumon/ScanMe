@@ -44,7 +44,7 @@ class ErrorHandler {
   static Future<void> handleError(
     dynamic error, {
     required String context,
-    bool rethrow = false,
+    bool shouldRethrow = false,
   }) async {
     _logger.e(
       'Error in $context',
@@ -54,8 +54,8 @@ class ErrorHandler {
 
     // TODO: Send to error tracking service (Sentry, etc.)
 
-    if (rethrow) {
-      rethrow;
+    if (shouldRethrow) {
+      throw error;
     }
   }
 

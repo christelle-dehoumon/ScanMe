@@ -261,10 +261,6 @@ class _MerchantDashboardScreenState extends ConsumerState<MerchantDashboardScree
     final date = DateTime.parse(timestamp);
     final formattedDate = DateFormat('HH:mm').format(date);
 
-    Color opColor = AppColors.orangeMoney;
-    if (op.toLowerCase().contains('moov')) opColor = AppColors.moovMoney;
-    if (op.toLowerCase().contains('wave')) opColor = AppColors.wave;
-
     return Container(
       margin: const EdgeInsets.only(bottom: 12),
       padding: const EdgeInsets.all(16),
